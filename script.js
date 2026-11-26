@@ -32,7 +32,7 @@ const GALLERY_PHOTOS = [
     desc: "Dressed up for a night out, yet all I could look at was you."
   },
   {
-    url: "sunday morning.jpg",
+    url: "Sunday morning.jpg",
     title: "Chasing Horizons",
     category: "adventures",
     desc: "Exploring new places and collecting memories side by side."
