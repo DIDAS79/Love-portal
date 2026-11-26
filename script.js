@@ -8,37 +8,37 @@
 // ============================================================================
 const GALLERY_PHOTOS = [
   {
-    url: "img/date together.jpg",
+    url: "date together.jpg",
     title: "Golden Hour Embrace",
     category: "dates",
     desc: "Watching the sky turn gold together—nothing else in the world mattered."
   },
   {
-    url: "img/togetheradventure.jpg",
+    url: "togetheradventure.jpg",
     title: "Hand in Hand Forever",
     category: "adventures",
     desc: "Every road feels effortless when my hand is holding yours."
   },
   {
-    url: "img/holding together.jpg",
+    url: "holding together.jpg",
     title: "Candid Laughter",
     category: "cozy",
     desc: "My favorite sound in the entire universe is making you laugh."
   },
   {
-    url: "img/horizon.jpg",
+    url: "horizon.jpg",
     title: "Evening Under the Lights",
     category: "dates",
     desc: "Dressed up for a night out, yet all I could look at was you."
   },
   {
-    url: "img/sunday morning.jpg",
+    url: "sunday morning.jpg",
     title: "Chasing Horizons",
     category: "adventures",
     desc: "Exploring new places and collecting memories side by side."
   },
   {
-    url: "img/kissing.jpg",
+    url: "kissing.jpg",
     title: "Quiet Sunday Morning",
     category: "cozy",
     desc: "Simple, peaceful moments with you are worth more than gold."
