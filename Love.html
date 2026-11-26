@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Didas &amp; Drusilla — Our Love Portfolio</title>
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" </link>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating Rose Petals Canvas -->
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-names">Didas <span class="amp">&amp;</span> Drusilla</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Memories</a>
+        <a href="#notes">Love Notes</a>
+        <a href="#bucketlist">Bucket List</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="music-btn" id="music-toggle" title="Toggle Ambient Romantic Melody" aria-label="Toggle Music">
+          <i data-lucide="music" id="music-icon"></i>
+          <span class="music-label" id="music-label">Play Love Song</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Navigation Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <!-- PHOTO REPLACEMENT GUIDE: Replace the background-image URL below with your favorite couple photo -->
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1920&q=85');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i data-lucide="heart" class="icon-xs fill-current"></i>
+        <span>Forever &amp; Always</span>
+      </div>
+
+      <h1 class="hero-title">Didas <span class="script-amp">&amp;</span> Drusilla</h1>
+      <p class="hero-subtitle">Two souls, one heartbeat — every ordinary moment with you becomes my favorite memory.</p>
+
+      <!-- Live Anniversary Timer Card -->
+      <div class="timer-card">
+        <div class="timer-header">
+          <span class="timer-heading">Together For</span>
+          <button class="date-pill" id="edit-date-btn" title="Click to set your real anniversary date">
+            <i data-lucide="calendar-heart" class="icon-xs"></i>
+            <span id="display-anniversary">Since Nov 25, 2026</span>
+            <i data-lucide="pencil" class="icon-xxs"></i>
+          </button>
+        </div>
+
+        <div class="timer-grid" id="timer-grid">
+          <div class="timer-box">
+            <span class="timer-num" id="t-days">000</span>
+            <span class="timer-unit">Days</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-num" id="t-hours">00</span>
+            <span class="timer-unit">Hours</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-num" id="t-mins">00</span>
+            <span class="timer-unit">Minutes</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-num" id="t-secs">00</span>
+            <span class="timer-unit">Seconds</span>
+          </div>
+        </div>
+
+        <!-- Inline Date Picker Popover -->
+        <div class="date-editor hidden" id="date-editor">
+          <label for="anniversary-input">Set Our Special Date:</label>
+          <div class="date-editor-row">
+            <input type="date" id="anniversary-input" />
+            <button class="btn btn-primary btn-sm" id="save-date-btn">Save Date</button>
+            <button class="btn btn-ghost btn-sm" id="cancel-date-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#story" class="btn btn-primary">
+          <span>Explore Our Journey</span>
+          <i data-lucide="arrow-down" class="icon-sm"></i>
+        </a>
+        <a href="#gallery" class="btn btn-glass">
+          <i data-lucide="images" class="icon-sm"></i>
+          <span>Photo Gallery</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUPLE PROFILE / ABOUT US -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The Two of Us</span>
+        <h2 class="section-title">Written in the Stars</h2>
+        <p class="section-desc">Different strengths, shared dreams, and an unbreakable bond built on laughter, trust, and endless love.</p>
+      </div>
+
+      <div class="couple-grid">
+        <!-- Didas Card -->
+        <div class="profile-card">
+          <div class="profile-img-wrap">
+            <!-- PHOTO REPLACEMENT GUIDE: Replace src with Didas's portrait photo -->
+            <img src="img/snap1.jpg" alt="snap1.jpg">
+            
+                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Didas Portrait" />       
+            
+            
+            
+            <span class="profile-tag">His Side</span>
+          </div>
+          <div class="profile-body">
+            <h3>Didas</h3>
+            <p class="profile-role">The Protector &amp; Dreamer</p>
+            <p class="profile-bio">Always bringing warmth, calm strength, and a reason to smile. Loving Drusilla is the easiest and greatest adventure of my life.</p>
+            <div class="profile-traits">
+              <span><i data-lucide="sparkles" class="icon-xxs"></i> Loyal</span>
+              <span><i data-lucide="coffee" class="icon-xxs"></i> Romantic</span>
+              <span><i data-lucide="compass" class="icon-xxs"></i> Adventurous</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Heart Connector -->
+        <div class="couple-connector" aria-hidden="true">
+          <div class="connector-circle">
+            <i data-lucide="heart" class="fill-current"></i>
+          </div>
+        </div>
+
+        <!-- Drusilla Card -->
+        <div class="profile-card">
+          <div class="profile-img-wrap">
+            <!-- PHOTO REPLACEMENT GUIDE: Replace src with Drusilla's portrait photo -->
+            
+            
+            <img src="img/snap2.jpg" alt="snap2.jpg">
+            
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Drusilla Portrait" />
+            <span class="profile-tag">Her Side</span>
+          </div>
+          <div class="profile-body">
+            <h3>Drusilla</h3>
+            <p class="profile-role">The Sunshine &amp; Soul</p>
+            <p class="profile-bio">Radiant, kind-hearted, and effortlessly graceful. Every day beside Didas feels like coming home to my safest place.</p>
+            <div class="profile-traits">
+              <span><i data-lucide="sun" class="icon-xxs"></i> Radiant</span>
+              <span><i data-lucide="heart" class="icon-xxs"></i> Caring</span>
+              <span><i data-lucide="music" class="icon-xxs"></i> Joyful</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR LOVE STORY TIMELINE -->
+  <section class="section story-section" id="story">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Chapter by Chapter</span>
+        <h2 class="section-title">Our Love Story</h2>
+        <p class="section-desc">Click any milestone text below to customize it with your own special memories—your edits save automatically.</p>
+      </div>
+
+      <div class="timeline" id="timeline-container">
+        <!-- Milestone 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"><i data-lucide="sparkles" class="icon-xs"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date" contenteditable="true" data-key="m1-date">First Glance • 2026</span>
+            <h3 contenteditable="true" data-key="m1-title">The Day Our Paths Crossed</h3>
+            <p contenteditable="true" data-key="m1-desc">From our very first conversation, time seemed to slow down. Neither of us knew that a simple hello would turn into forever.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"><i data-lucide="coffee" class="icon-xs"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date" contenteditable="true" data-key="m2-date">First Date • Unforgettable</span>
+            <h3 contenteditable="true" data-key="m2-title">Hours Felt Like Minutes</h3>
+            <p contenteditable="true" data-key="m2-desc">Endless laughter, shared stories, and that unmistakable spark when our hearts met. We didn't want the evening to end.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"><i data-lucide="heart" class="icon-xs"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date" contenteditable="true" data-key="m3-date">Official • Us Against the World</span>
+            <h3 contenteditable="true" data-key="m3-title">Becoming Didas &amp; Drusilla</h3>
+            <p contenteditable="true" data-key="m3-desc">The moment we chose each other wholeheartedly—promising to stand together through every season, hand in hand.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"><i data-lucide="infinity" class="icon-xs"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date" contenteditable="true" data-key="m4-date">Today &amp; Beyond</span>
+            <h3 contenteditable="true" data-key="m4-title">Still Falling Deeper Every Day</h3>
+            <p contenteditable="true" data-key="m4-desc">Every sunset we watch and every dream we build together reminds us that the best chapters of our love story are still ahead.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Captured Moments</span>
+        <h2 class="section-title">Our Favorite Memories</h2>
+        <p class="section-desc">Curated romantic snapshots—click any photo to view full screen, or swap the image links in <code>script.js</code> with your own photos.</p>
+      </div>
+
+      <div class="gallery-filters" id="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Moments</button>
+        <button class="filter-btn" data-filter="dates">Date Nights</button>
+        <button class="filter-btn" data-filter="adventures">Adventures</button>
+        <button class="filter-btn" data-filter="cozy">Cozy Days</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Populated dynamically from GALLERY_PHOTOS array in script.js for super easy photo replacement -->
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LOVE NOTES -->
+  <section class="section notes-section" id="notes">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">From the Heart</span>
+        <h2 class="section-title">Secret Love Notes</h2>
+        <p class="section-desc">Tap any envelope card to reveal a sweet message, or write a new love note for each other below.</p>
+      </div>
+
+      <div class="notes-grid" id="notes-grid">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Add New Love Note Form -->
+      <form class="add-note-form" id="add-note-form">
+        <h3><i data-lucide="pen-tool" class="icon-sm"></i> Leave a Love Note</h3>
+        <div class="form-row">
+          <select id="note-author" aria-label="Who is writing this note">
+            <option value="From Didas to Drusilla">From Didas to Drusilla</option>
+            <option value="From Drusilla to Didas">From Drusilla to Didas</option>
+          </select>
+          <input type="text" id="note-title" placeholder="Note title (e.g., Why I Adore You)..." required maxlength="50" />
+        </div>
+        <textarea id="note-body" rows="3" placeholder="Write your sweet message here..." required maxlength="260"></textarea>
+        <button type="submit" class="btn btn-primary">
+          <i data-lucide="send" class="icon-xs"></i>
+          <span>Seal &amp; Save Love Note</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- COUPLE BUCKET LIST -->
+  <section class="section bucket-section" id="bucketlist">
+    <div class="container">
+      <div class="bucket-wrapper">
+        <div class="bucket-info">
+          <span class="eyebrow">Dreams Together</span>
+          <h2 class="section-title">Our Couple Bucket List</h2>
+          <p>Adventures we have already conquered and dreams we are going to make real side by side.</p>
+
+          <div class="progress-card">
+            <div class="progress-top">
+              <span>Memories Completed</span>
+              <strong id="bucket-stats">2 / 6</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="bucket-progress" style="width: 33%"></div>
+            </div>
+          </div>
+
+          <form class="add-bucket-form" id="add-bucket-form">
+            <input type="text" id="bucket-input" placeholder="Add a new dream together..." required maxlength="80" />
+            <button type="submit" class="btn btn-primary">
+              <i data-lucide="plus" class="icon-sm"></i>
+              <span>Add</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="bucket-list-card">
+          <ul class="bucket-items" id="bucket-items">
+            <!-- Rendered by JS -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-heart">
+        <i data-lucide="heart" class="fill-current"></i>
+      </div>
+      <h2 class="footer-names">Didas &amp; Drusilla</h2>
+      <p class="footer-quote">“In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.”</p>
+      <p class="footer-copy">Designed by Didas with endless love • didasnuwagaba79@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- FULLSCREEN PHOTO LIGHTBOX -->
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo Viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+      <i data-lucide="x"></i>
+    </button>
+    <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous Photo">
+      <i data-lucide="chevron-left"></i>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Couple Memory" />
+      <div class="lightbox-caption">
+        <h4 id="lightbox-title"></h4>
+        <p id="lightbox-desc"></p>
+      </div>
+    </div>
+    <button class="lightbox-nav next" id="lightbox-next" aria-label="Next Photo">
+      <i data-lucide="chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
